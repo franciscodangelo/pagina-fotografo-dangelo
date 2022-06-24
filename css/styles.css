@@ -652,3 +652,8 @@ padding-bottom: 5px;
     }
 }
 
+@media (min-width:1200px){
+    .galeria div img:hover{
+        transform: scale(1.01);
+    }
+}
