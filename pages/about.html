@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>About</title>
 </head>
 
@@ -54,9 +55,9 @@
     </header>
     <!-- --main-- -->
     <main>
-        <section class="contenedor-bio">
-            <h2>Biography</h2>
-            <div class="item">
+        <section class="contenedor-about">
+            <h2>About</h2>
+            <div class="tarjeta-about">
                 <video src="../video/IMG_248454599.MOV" loop autoplay muted>video
                     autorretrato</video>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eius reiciendis sint inventore, cumque
@@ -69,6 +70,27 @@
                     voluptatem recusandae quo ipsa laborum ullam, iusto corporis.</p>
                 </div>
             </section>
+        <section class="contenedor-exhibits">
+                <h2>Exhibits</h2>
+                <div class="contenedor-exhibist-tarjetas">
+                    <div class="exhibits-item" data-aos="zoom-in" data-aos-duration="3800">
+                        <img src="../img/exhibit1.jpg" alt="room1">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non amet provident animi est ad! Dolorum explicabo illum, aliquam eum sequi cum labore rem temporibus id totam laudantium cupiditate fuga magni?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo doloremque autem provident animi, veniam vitae quasi quidem! Ad sequi facere placeat ab quibusdam veniam deserunt, omnis quo laudantium. Tempora, illo?</p>
+                    </div>
+                    <div class="exhibits-item" data-aos="zoom-in" data-aos-duration="3800">
+                        <img src="../img/exhibit2.jpg" alt="room2">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non amet provident animi est ad! Dolorum explicabo illum, aliquam eum sequi cum labore rem temporibus id totam laudantium cupiditate fuga magni?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo doloremque autem provident animi, veniam vitae quasi quidem! Ad sequi facere placeat ab quibusdam veniam deserunt, omnis quo laudantium. Tempora, illo?</p>
+                    </div>
+                    <div class="exhibits-item" data-aos="zoom-in" data-aos-duration="3800">
+                        <img src="../img/exhibit3.jpg" alt="room3">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non amet provident animi est ad! Dolorum explicabo illum, aliquam eum sequi cum labore rem temporibus id totam laudantium cupiditate fuga magni?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo doloremque autem provident animi, veniam vitae quasi quidem! Ad sequi facere placeat ab quibusdam veniam deserunt, omnis quo laudantium. Tempora, illo?</p>
+                    </div>
+                    <div class="exhibits-item" data-aos="zoom-in" data-aos-duration="3800">
+                        <img src="../img/exhibit4.jpg" alt="room4">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non amet provident animi est ad! Dolorum explicabo illum, aliquam eum sequi cum labore rem temporibus id totam laudantium cupiditate fuga magni?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo doloremque autem provident animi, veniam vitae quasi quidem! Ad sequi facere placeat ab quibusdam veniam deserunt, omnis quo laudantium. Tempora, illo?</p>
+                    </div>
+                </div>
+        </section>
     </main>
     <!-- --footer-- -->
     <footer>
@@ -90,5 +112,9 @@
             </ul>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
