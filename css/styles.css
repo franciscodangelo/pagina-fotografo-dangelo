@@ -15,6 +15,13 @@ body{
     background-attachment: fixed;
 }
 
+.backroundform{
+    background: url(../img/img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 
 ul, ol{
     list-style-type: none;
@@ -24,7 +31,117 @@ li, a{
     text-decoration: none;
 }
 
-h2{
+
+.navbar{
+    background-color: rgba(0, 0, 0, 0.829);
+}
+.navbar a{
+    color: white;
+}
+
+.navbar a:hover{
+    color: white;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-toggler {
+color: white;
+border: white;
+}
+
+.people h2, .about h2, .exhibits h2, .printtext{
+    text-shadow: 5px 5px 10px black;
+    background-color: rgba(0, 0, 0, 0.911);
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.textoprincipal p{
+    font-size: 10rem;
+    text-shadow: 5px 5px 10px black;
+    color: rgb(247, 247, 247);
+}
+
+@media (min-width:360px){
+    .textoprincipal p{
+        font-size: 3.5rem;
+    }
+}
+
+@media (min-width:500px){
+    .textoprincipal p{
+        font-size: 4.5rem;
+    }
+}
+
+
+@media (min-width:768px){
+    .textoprincipal p{
+        font-size: 7rem;
+    }
+}
+
+@media (min-width:1000px){
+    .textoprincipal p{
+        font-size: 9rem;
+    }
+}
+
+
+@media (min-width:1200px){
+    .textoprincipal p{
+        font-size: 10rem;
+    }
+}
+
+@media (min-width:1400px){
+    .textoprincipal p{
+        font-size: 13rem;
+    }
+}
+
+
+    .peopleface img:hover{
+        transform: scale(2.5);
+}
+
+
+.abouttext, .distanciatext, .lumbretext{
+    background-color: rgba(0, 0, 0, 0.76);
+    border-radius: 20px;
+}
+
+.titulodistancia{
+    letter-spacing: 50px;
+    text-shadow: 5px 5px 10px black;
+    padding: 10px;
+}
+.titulolumbre{
+    text-shadow: 5px 5px 10px black;
+    padding: 10px;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.904);
+}
+
+.aboutcard{
+    background-color: rgba(0, 0, 0, 0.904);
+}
+
+.botonprint{
+    background-color: black;
+}
+.botonprint:hover{
+    background-color: rgba(0, 184, 184, 0.801);
+}
+
+
+
+
+/* h2{
     text-align: center;
     font-weight: 400;
     font-size: 1.1rem;
@@ -42,12 +159,12 @@ h2{
     h2{
         font-size: 1.8rem; 
     }
-}
+} */
 
 
 /* ----------header---------- */
 
-header{
+/* header{
     padding-top: 15px;
     padding-left: 15px;
     padding-right: 15px;
@@ -146,7 +263,7 @@ header nav ul li{
 
 /* ----------footer---------- */
 
-footer{
+/* footer{
     padding: 14px;
     display: flex;
     flex-direction: row;
@@ -193,12 +310,12 @@ footer div ul li a img{
     footer div ul li a img{
     width: 30px; 
     }
-}
+}  */
 
 
 /* ----------index---------- */
 
-.contenedor-video{
+/* .contenedor-video{
     width: 90%;
     margin: auto;
 }
@@ -313,13 +430,13 @@ footer div ul li a img{
     .contenedor-people .galeria-people div img{
         transition-duration: 300ms;
     }
-}
+} */
 
 
 
 /* ----------art projects---------- */
 
-.contenedor-projects{
+/* .contenedor-projects{
     padding: 5px;
     display: flex;
     flex-direction: column;
@@ -407,12 +524,11 @@ footer div ul li a img{
         opacity: 1;
     }
     
-
-}
+} */
 
 /* ----------about---------- */
 
-.contenedor-about{
+/* .contenedor-about{
     padding: 14px;
     display: flex;
     flex-direction: column;
@@ -535,12 +651,12 @@ footer div ul li a img{
         width: 50%;
         padding: 30px;
     }
-}
+} */
 
 
 /* ----------contact---------- */
 
-.contenedor-form{
+/* .contenedor-form{
     padding: 15px;
     
 }
@@ -653,11 +769,11 @@ form .action input[type="submit"]{
     .contenedor-form{
         padding: 50px 0px 50px 0px;
     }
-}
+} */
 
 /* ----------printstore---------- */
 
-.contenedor-print{
+/* .contenedor-print{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -735,10 +851,10 @@ padding-bottom: 5px;
         grid-template-columns: repeat(4,1fr); 
         grid-template-rows: repeat(2,1fr); 
     }
-}
+} */
 /* ----------galeria distancia---------- */
 
-.contenedor-distancia{
+/* .contenedor-distancia{
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -819,7 +935,7 @@ padding-bottom: 5px;
 
 /* ----------galeriad portrait---------- */
 
-.contenedor-portrait{
+/* .contenedor-portrait{
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -901,11 +1017,11 @@ padding-bottom: 5px;
     .contenedor-portrait .head-portrait h2{
         padding-bottom: 20px;
     }
-}
+} */
 
 /* ----------galeria color---------- */
 
-.contenedor-color{
+/* .contenedor-color{
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -983,11 +1099,11 @@ padding-bottom: 5px;
     .contenedor-color .head-color h2{
         padding-bottom: 20px;
     }
-}
+}  */
 
 /* ----------galeria thefall---------- */
 
-.contenedor-thefall{
+/* .contenedor-thefall{
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -1060,4 +1176,4 @@ padding-bottom: 5px;
     .contenedor-thefall .head-thefall h2{
         padding-bottom: 20px;
     }
-}
+} */
