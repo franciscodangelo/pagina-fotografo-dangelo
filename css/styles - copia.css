@@ -129,7 +129,6 @@ header nav ul li{
     header nav ul li a:hover:after{
         width: 100%;
     }
-
 }
 
 @media (min-width:768px){
