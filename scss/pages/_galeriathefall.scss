@@ -31,10 +31,11 @@
 
 .contenedor-thefall .galeria-thefall div img{
     width: 100%;
+    border-radius: 10px;
 }
 
-@media (min-width:500px){
-    
+
+@media (min-width:768px){
     .contenedor-thefall{
         padding: 15px;
     }
@@ -51,10 +52,7 @@
     .contenedor-thefall .galeria-thefall div img{
         padding: 10px;
     }
-}
 
-@media (min-width:768px){
-    
     .contenedor-thefall{
         padding: 20px;
     }

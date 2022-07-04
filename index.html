@@ -5,60 +5,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Francisco D'Angelo Photographer</title>
 </head>
 
 <body>
     <!-- --header-- -->
-    <header>
-        <div class="head-social">
-            <h1><a href="index.html">FRANCISCO <br> DANGELO</a></h1>
-            <ul>
-                <li>
-                    <a href="https://www.instagram.com/invites/contact/?i=1ow6gz32wfmtp&utm_content=i7sz6n"
-                    target="_blank"><img src="./img/logo-instagram.png" alt="instagram-logo"></a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/francisco.dangelo.3/" target="_blank"><img
-                    src="./img/logo-facebook.png" alt="facebook-logo"></a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/FranciscoDAngit" target="_blank"><img src="./img/logo-twitter.png"
-                    alt="logo-twitter"></a>
-                </li>
-            </ul>
+    <header class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand h1 fs-3 fw-bold" href="./index.html">FRANCISCO<br>DANGELO</a>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="./pages/artprojects.html" id="navbarDropdownMenuLink"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            art projects
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="./pages/galeriadistancia.html">galeria distancia</a>
+                            </li>
+                            <li><a class="dropdown-item" href="./pages/galerialumbre.html">galeria lumbre</a></li>
+                            <li><a class="dropdown-item" href="./pages/galeriaportrait.html">galeria portrait</a>
+                            </li>
+                            <li><a class="dropdown-item" href="./pages/galeriastreetbw.html">galeria street b-w</a>
+                            </li>
+                            <li><a class="dropdown-item" href="./pages/galeriastreetcolor.html">galeria street
+                                    color</a></li>
+                            <li><a class="dropdown-item" href="./pages/galeriathefall.html">galeria the fall</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/about.html">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/contact.html">contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/printstore.html">print store</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        
-        <nav>
-            <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="pages/artprojects.html">art projects</a>
-                    <!-- <ul>
-                        <li><a href="pages/galeriadistancia.html">distancia</a></li>
-                        <li><a href="pages/galeriastreetcolor.html">street color</a></li>
-                        <li><a href="pages/galeriastreetbw.html">street b-w</a></li>
-                        <li><a href="pages/galeriaportrait.html">portrait</a></li>
-                        <li><a href="pages/galeriathefall.html">the fall</a></li>
-                        <li><a href="pages/galerialumbre.html">lumbre</a></li>
-                    </ul> -->
-                </li>
-                <li><a href="pages/about.html">about</a></li>
-                <li><a href="pages/contact.html">contact</a></li>
-                <li><a href="pages/printstore.html">print store</a></li>
-            </ul>
-        </nav>
     </header>
     <!-- --main-- -->
     <main>
-        <section class="contenedor-video">
-            <div>
-                <video src="./video/videoindex.MOV"loop autoplay muted>video fotos</video>
-                <p> <strong>artist</strong> <br> and <br> visual <br> creator</p>
+        <!-- --hero section-- -->
+        <section class="conteiner-fluid p-3 mt-2">
+            <div class="row textoprincipal align-items-center">
+                <p class="mg-0 text-center" data-aos="fade-right" data-aos-duration="2000">---artist--------&</p>
+                <p class="mg-0 text-center" data-aos="fade-left" data-aos-duration="2000">visual/creator</p>
             </div>
+        </section>
+        <!-- --carrousel-- -->
+        <section>
+            <div id="carouselExampleInterval" class="carousel slide p-4 m-xl-5" data-bs-ride="carousel" data-bs-pause="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="./img/slider1.jpg" class="d-block w-100" alt="kiss">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./img/slider2.jpg" class="d-block w-100" alt="dog">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./img/slider3.jpg" class="d-block w-100" alt="people">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./img/slider4.jpg" class="d-block w-100" alt="broken glass">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./img/slider5.jpg" class="d-block w-100" alt="hand">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./img/slider6.jpg" class="d-block w-100" alt="woman">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./img/slider7.jpg" class="d-block w-100" alt="town">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./img/slider8.jpg" class="d-block w-100" alt="screm">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
         </section>
         <section class="contenedor-people">
             <h2>People/i/worked/with</h2>
@@ -139,25 +194,36 @@
         </section>
     </main>
     <!-- --footer-- -->
-    <footer>
-        <!-- solo agrego esta informacion en footer porque por ahora es solo lo que quiero que aparezca en mi web, seria un footer mas minimal, el hr por ahora lo dejo no se como generar esa separacion de otra manera -->
-        <p>copyright © all rights reserved</p>
-        <div>
-            <ul>
-                <li>
-                    <a href="https://www.instagram.com/invites/contact/?i=1ow6gz32wfmtp&utm_content=i7sz6n"
-                    target="_blank"><img src="./img/logo-instagram.png" alt="instagram-logo"></a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/francisco.dangelo.3/" target="_blank"><img
-                    src="./img/logo-facebook.png" alt="facebook-logo"></a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/FranciscoDAngit" target="_blank"><img src="./img/logo-twitter.png"
-                    alt="logo-twitter"></a>
-                </li>
-            </ul>
+    <footer class="conteiner-fluid footer p-3">
+        <div class="row m-0">
+            <div class="col-12 col-md-6 d-flex align-items-center justify-content-center justify-content-md-start">
+                <p class="p-2 m-0">copyright © all rights reserved</p>
+            </div>
+            <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end">
+                <ul class="row m-0 p-2 align-items-center">
+                    <li class="col-4">
+                        <a href="https://www.instagram.com/invites/contact/?i=1ow6gz32wfmtp&utm_content=i7sz6n"
+                            target="_blank"><img src="./img/logo-instagram.png" alt="instagram-logo" width="30px"></a>
+                    </li>
+                    <li class="col-4">
+                        <a href="https://www.facebook.com/francisco.dangelo.3/" target="_blank"><img
+                                src="./img/logo-facebook.png" alt="facebook-logo" width="30px"></a>
+                    </li>
+                    <li class="col-4">
+                        <a href="https://twitter.com/FranciscoDAngit" target="_blank"><img src="./img/logo-twitter.png"
+                                alt="logo-twitter" width="30px"></a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -1,24 +1,4 @@
 /* ----------index---------- */
-
-.contenedor-video{
-    width: 90%;
-    margin: auto;
-}
-
-.contenedor-video div video{
-    width: 100%;
-    padding-top: 5px;
-}
-
-.contenedor-video div p{
-    display: none;
-}
-.contenedor-video div{
-    margin-top: 10px;
-    margin-bottom: 10px;
-
-}
-
 .contenedor-people{
     display: flex;
     flex-direction: column;
@@ -64,6 +44,8 @@
         justify-items: center;
         align-items: center;
         width: 100%;
+        margin-top: 15px;
+        margin-bottom: 20px;
     }
     .contenedor-people h2{
         font-size: 1.3rem;
@@ -71,48 +53,58 @@
 }
 
 @media (min-width:1200px){
-    .contenedor-video{
-        width: 100%;
-    }
-    .contenedor-video div p{
-        display: inline-block;
-    }
-
-    .contenedor-video div{
-        display: grid; 
-            grid-template-columns: 2.5fr 1fr; 
-            grid-template-rows: 1fr; 
-            gap: 0px 0px; 
-            grid-template-areas: 
-            "video p"; 
-            align-items: center;
-    }
-    .contenedor-video div p{
-        grid-area: p;
-        margin: auto;
-        text-align: center;
-        font-size: 4.5rem;
-        font-weight: 600;
-        text-shadow: 5px 5px 10px black;
-        letter-spacing: 4px;
-    }
-    .contenedor-video div video{
-        grid-area: video;
-        margin: auto;
-        padding: 20px;
-        width: 90%;
-    }
     .contenedor-people h2{
         font-size: 1.7rem;
     }
     .contenedor-people .galeria-people div img{
         width: 30%;
+        transition-duration: 200ms;
     }
     .contenedor-people .galeria-people div img:hover{
         transform: scale(2.7);
     }
-    
-    .contenedor-people .galeria-people div img{
-        transition-duration: 300ms;
+}
+
+.textoprincipal p{
+    font-size: 10rem;
+    text-shadow: 5px 5px 10px black;
+    color: rgb(247, 247, 247);
+}
+
+@media (min-width:360px){
+    .textoprincipal p{
+        font-size: 3.5rem;
+    }
+}
+
+@media (min-width:500px){
+    .textoprincipal p{
+        font-size: 4.5rem;
+    }
+}
+
+
+@media (min-width:768px){
+    .textoprincipal p{
+        font-size: 7rem;
+    }
+}
+
+@media (min-width:1000px){
+    .textoprincipal p{
+        font-size: 9rem;
+    }
+}
+
+
+@media (min-width:1200px){
+    .textoprincipal p{
+        font-size: 10rem;
+    }
+}
+
+@media (min-width:1400px){
+    .textoprincipal p{
+        font-size: 13rem;
     }
 }

@@ -1,97 +1,32 @@
-header{
-    padding-top: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.781);
+.navbar{
+    background-color: rgba(0, 0, 0, 0.829);
+}
+.navbar a{
+    color: white;
 }
 
-header .head-social {
-display: flex;
-flex-direction: column;
-padding: 5px;
+.navbar-expand-lg .navbar-nav .nav-link {
+    color: white;
 }
 
-header .head-social h1{
-    font-size: 1.5rem;
+.navbar a:hover{
+    color: white;
 }
 
-header .head-social ul{
-display: flex;
-flex-direction: row;
-justify-content: start;
-padding-top: 10px;
-}
-
-header .head-social ul li{
-    padding: 5px;
-}
-
-header .head-social img{
-    width: 20px;
-}
-
-header nav ul li{
-    padding: 2px;
-    font-weight: 100;
-    font-size: 0.7rem;
-}
-
-@media (min-width:600px){
-    header{
-        padding: 20px;
-        align-items: baseline;
-    }
-    header .head-social ul{
-        display: none;
-    }
-    header .head-social h1{
-        font-weight: 750;
-        font-size: 1.8rem;
-    }
-    header nav ul{
-        display: flex;
-        flex-direction: row;
-    }
-    header nav ul li{
-        padding: 2px;
-        font-weight: 200;
-        font-size: 1rem;
-    }
-
-    header nav ul li a{
-        padding: 0 7px;
-        position: relative;
-    }
-    
-    header nav ul li a:after{
-        content: "";
-        position: absolute;
-        background-color: white;
-        height: 2px;
-        width: 0;
-        left: 0;
-        bottom: -10px;
-        transition: 0.3s;
-    }
-    header nav ul li a:hover:after{
-        width: 100%;
-    }
-}
-
-@media (min-width:768px){
-    header nav ul li{
-        padding: 10px;
-    }
+.dropdown-menu{
+    background-color: black;
 }
 
 @media (min-width:1200px){
-    header nav ul li{
-        padding: 15px;
-    }
+.nav-item:hover{
+    background-color: rgba(128, 128, 128, 0.575);
+    border-radius: 10px;
 }
+
+.dropdown-item:hover{
+    background-color: rgba(128, 128, 128, 0.575);
+}
+}
+
 
 

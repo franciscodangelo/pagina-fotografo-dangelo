@@ -16,7 +16,7 @@
     display: grid; 
     grid-template-columns: repeat(2,1fr); 
     grid-template-rows: repeat(13,1fr); 
-    gap: 0px 4.5px;
+    gap: 0px 2px;
 }
 
 .contenedor-color .head-color h2{
@@ -38,6 +38,7 @@
 
 .contenedor-color .galeria-color div img{
     width: 100%;
+    border-radius: 7px;
 }
 
 @media (min-width:500px){
@@ -46,6 +47,7 @@
     }
     .contenedor-color .galeria-color{
         margin-top: 20px;
+        gap: 20px 20px;
     }
     .contenedor-color .galeria-color div{
         width: 100%;

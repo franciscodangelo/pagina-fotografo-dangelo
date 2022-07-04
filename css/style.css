@@ -42,163 +42,40 @@ h2 {
     font-size: 1.8rem;
   }
 }
-header {
-  padding-top: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.781);
+.navbar {
+  background-color: rgba(0, 0, 0, 0.829);
 }
 
-header .head-social {
-  display: flex;
-  flex-direction: column;
-  padding: 5px;
+.navbar a {
+  color: white;
 }
 
-header .head-social h1 {
-  font-size: 1.5rem;
+.navbar-expand-lg .navbar-nav .nav-link {
+  color: white;
 }
 
-header .head-social ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  padding-top: 10px;
+.navbar a:hover {
+  color: white;
 }
 
-header .head-social ul li {
-  padding: 5px;
+.dropdown-menu {
+  background-color: black;
 }
 
-header .head-social img {
-  width: 20px;
-}
-
-header nav ul li {
-  padding: 2px;
-  font-weight: 100;
-  font-size: 0.7rem;
-}
-
-@media (min-width: 600px) {
-  header {
-    padding: 20px;
-    align-items: baseline;
-  }
-  header .head-social ul {
-    display: none;
-  }
-  header .head-social h1 {
-    font-weight: 750;
-    font-size: 1.8rem;
-  }
-  header nav ul {
-    display: flex;
-    flex-direction: row;
-  }
-  header nav ul li {
-    padding: 2px;
-    font-weight: 200;
-    font-size: 1rem;
-  }
-  header nav ul li a {
-    padding: 0 7px;
-    position: relative;
-  }
-  header nav ul li a:after {
-    content: "";
-    position: absolute;
-    background-color: white;
-    height: 2px;
-    width: 0;
-    left: 0;
-    bottom: -10px;
-    transition: 0.3s;
-  }
-  header nav ul li a:hover:after {
-    width: 100%;
-  }
-}
-@media (min-width: 768px) {
-  header nav ul li {
-    padding: 10px;
-  }
-}
 @media (min-width: 1200px) {
-  header nav ul li {
-    padding: 15px;
+  .nav-item:hover {
+    background-color: rgba(128, 128, 128, 0.575);
+    border-radius: 10px;
+  }
+  .dropdown-item:hover {
+    background-color: rgba(128, 128, 128, 0.575);
   }
 }
-footer {
-  padding: 14px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.87);
+.footer {
+  background-color: rgba(0, 0, 0, 0.904);
 }
 
-footer p {
-  font-size: 0.6rem;
-}
-
-footer div ul {
-  display: none;
-}
-
-footer div ul li {
-  padding: 3px;
-}
-
-footer div ul li a img {
-  width: 17px;
-}
-
-@media (min-width: 600px) {
-  footer {
-    padding: 20px;
-    justify-content: space-between;
-  }
-  footer div ul {
-    display: flex;
-    flex-direction: row;
-  }
-  footer div ul li a img {
-    width: 25px;
-  }
-  footer p {
-    font-size: 0.8rem;
-  }
-}
-@media (min-width: 1200px) {
-  footer div ul li a img {
-    width: 30px;
-  }
-}
 /* ----------index---------- */
-.contenedor-video {
-  width: 90%;
-  margin: auto;
-}
-
-.contenedor-video div video {
-  width: 100%;
-  padding-top: 5px;
-}
-
-.contenedor-video div p {
-  display: none;
-}
-
-.contenedor-video div {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
 .contenedor-people {
   display: flex;
   flex-direction: column;
@@ -244,52 +121,59 @@ footer div ul li a img {
     justify-items: center;
     align-items: center;
     width: 100%;
+    margin-top: 15px;
+    margin-bottom: 20px;
   }
   .contenedor-people h2 {
     font-size: 1.3rem;
   }
 }
 @media (min-width: 1200px) {
-  .contenedor-video {
-    width: 100%;
-  }
-  .contenedor-video div p {
-    display: inline-block;
-  }
-  .contenedor-video div {
-    display: grid;
-    grid-template-columns: 2.5fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-template-areas: "video p";
-    align-items: center;
-  }
-  .contenedor-video div p {
-    grid-area: p;
-    margin: auto;
-    text-align: center;
-    font-size: 4.5rem;
-    font-weight: 600;
-    text-shadow: 5px 5px 10px black;
-    letter-spacing: 4px;
-  }
-  .contenedor-video div video {
-    grid-area: video;
-    margin: auto;
-    padding: 20px;
-    width: 90%;
-  }
   .contenedor-people h2 {
     font-size: 1.7rem;
   }
   .contenedor-people .galeria-people div img {
     width: 30%;
+    transition-duration: 200ms;
   }
   .contenedor-people .galeria-people div img:hover {
     transform: scale(2.7);
   }
-  .contenedor-people .galeria-people div img {
-    transition-duration: 300ms;
+}
+.textoprincipal p {
+  font-size: 10rem;
+  text-shadow: 5px 5px 10px black;
+  color: rgb(247, 247, 247);
+}
+
+@media (min-width: 360px) {
+  .textoprincipal p {
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 500px) {
+  .textoprincipal p {
+    font-size: 4.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .textoprincipal p {
+    font-size: 7rem;
+  }
+}
+@media (min-width: 1000px) {
+  .textoprincipal p {
+    font-size: 9rem;
+  }
+}
+@media (min-width: 1200px) {
+  .textoprincipal p {
+    font-size: 10rem;
+  }
+}
+@media (min-width: 1400px) {
+  .textoprincipal p {
+    font-size: 13rem;
   }
 }
 .contenedor-projects {
@@ -429,7 +313,7 @@ footer div ul li a img {
   align-items: center;
 }
 
-.contenedor-exhibist-tarjetas .exhibits-item {
+.contenedor-exhibist-tarjetas .exhibits-item1, .exhibits-item2, .exhibits-item3, .exhibits-item4 {
   display: flex;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.616);
@@ -438,13 +322,13 @@ footer div ul li a img {
   border-radius: 20px;
 }
 
-.contenedor-exhibist-tarjetas .exhibits-item img {
+.contenedor-exhibist-tarjetas .exhibits-item1 img, .exhibits-item2 img, .exhibits-item3 img, .exhibits-item4 img {
   width: 80%;
   padding: 10px;
   padding-top: 20px;
 }
 
-.contenedor-exhibist-tarjetas .exhibits-item p {
+.contenedor-exhibist-tarjetas .exhibits-item1 p, .exhibits-item2 p, .exhibits-item3 p, .exhibits-item4 p {
   padding: 15px;
   text-align: justify;
 }
@@ -463,15 +347,18 @@ footer div ul li a img {
   }
 }
 @media (min-width: 768px) {
-  .contenedor-exhibist-tarjetas .exhibits-item {
+  .contenedor-exhibist-tarjetas .exhibits-item1, .exhibits-item2, .exhibits-item3, .exhibits-item4 {
     display: flex;
     flex-direction: row;
     margin-bottom: 80px;
     margin: 20px;
   }
-  .contenedor-exhibist-tarjetas .exhibits-item img {
+  .contenedor-exhibist-tarjetas .exhibits-item1 img, .exhibits-item2 img, .exhibits-item3 img, .exhibits-item4 img {
     width: 55%;
     padding: 20px;
+  }
+  .contenedor-exhibist-tarjetas .exhibits-item2, .exhibits-item4 {
+    flex-direction: row-reverse;
   }
 }
 @media (min-width: 1000px) {
@@ -489,7 +376,7 @@ footer div ul li a img {
   }
 }
 @media (min-width: 1200px) {
-  .contenedor-exhibist-tarjetas .exhibits-item img {
+  .contenedor-exhibist-tarjetas .exhibits-item1 img, .exhibits-item2 img, .exhibits-item3 img, .exhibits-item4 img {
     width: 50%;
     padding: 30px;
   }
@@ -614,7 +501,7 @@ form .action input[type=submit] {
   width: 90%;
 }
 
-.contenedor-print h2 {
+.contenedor-print h2, .nft h2 {
   font-size: 1.5rem;
   text-shadow: 5px 5px 7px black;
   display: inline-block;
@@ -630,6 +517,7 @@ form .action input[type=submit] {
   overflow-x: scroll;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .contenedor-print .contenedor-item .item {
@@ -642,8 +530,7 @@ form .action input[type=submit] {
   text-align: center;
   padding: 10px;
   min-width: 250px;
-  margin-bottom: 10px;
-  margin-right: 20px;
+  margin-right: 15px;
 }
 
 .contenedor-print .contenedor-item .item p {
@@ -682,6 +569,9 @@ form .action input[type=submit] {
     grid-template-rows: repeat(4, 1fr);
     gap: 15px 15px;
   }
+  .contenedor-print .contenedor-item .item {
+    width: 100%;
+  }
 }
 @media (min-width: 1000px) {
   .contenedor-print .contenedor-item {
@@ -707,6 +597,7 @@ form .action input[type=submit] {
   padding: 7px;
   font-size: 1.3rem;
   font-weight: 500;
+  letter-spacing: 1rem;
 }
 .contenedor-distancia .head-distancia p {
   font-size: 1rem;
@@ -719,6 +610,7 @@ form .action input[type=submit] {
 }
 .contenedor-distancia .galeria-distancia div img {
   width: 100%;
+  border-radius: 7px;
 }
 
 @media (min-width: 500px) {
@@ -735,13 +627,16 @@ form .action input[type=submit] {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    gap: 0px 4.5px;
+    gap: 7px 7px;
     margin-top: 20px;
   }
   .contenedor-distancia .galeria-distancia div {
     width: 100%;
     padding: 1px;
     margin: 0;
+  }
+  .contenedor-distancia .head-distancia h2 {
+    letter-spacing: 2rem;
   }
 }
 @media (min-width: 768px) {
@@ -763,6 +658,9 @@ form .action input[type=submit] {
 @media (min-width: 1200px) {
   .contenedor-distancia .head-distancia h2 .head-distancia h2 {
     padding-bottom: 20px;
+  }
+  .contenedor-distancia .galeria-distancia {
+    gap: 12px 12px;
   }
 }
 .contenedor-portrait {
@@ -799,6 +697,7 @@ form .action input[type=submit] {
 
 .contenedor-portrait .galeria-portrait div img {
   width: 100%;
+  border-radius: 7px;
 }
 
 @media (min-width: 500px) {
@@ -806,7 +705,7 @@ form .action input[type=submit] {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(10, 1fr);
-    gap: 0px 4.5px;
+    gap: 10px 10px;
   }
   .contenedor-portrait {
     padding: 15px;
@@ -881,9 +780,10 @@ form .action input[type=submit] {
 
 .contenedor-thefall .galeria-thefall div img {
   width: 100%;
+  border-radius: 10px;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 768px) {
   .contenedor-thefall {
     padding: 15px;
   }
@@ -900,8 +800,6 @@ form .action input[type=submit] {
   .contenedor-thefall .galeria-thefall div img {
     padding: 10px;
   }
-}
-@media (min-width: 768px) {
   .contenedor-thefall {
     padding: 20px;
   }
@@ -937,7 +835,7 @@ form .action input[type=submit] {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(13, 1fr);
-  gap: 0px 4.5px;
+  gap: 0px 2px;
 }
 
 .contenedor-color .head-color h2 {
@@ -959,6 +857,7 @@ form .action input[type=submit] {
 
 .contenedor-color .galeria-color div img {
   width: 100%;
+  border-radius: 7px;
 }
 
 @media (min-width: 500px) {
@@ -967,6 +866,7 @@ form .action input[type=submit] {
   }
   .contenedor-color .galeria-color {
     margin-top: 20px;
+    gap: 20px 20px;
   }
   .contenedor-color .galeria-color div {
     width: 100%;
