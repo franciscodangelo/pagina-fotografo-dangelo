@@ -1,0 +1,11 @@
+.head-lumbre {
+    @include headgalerias;
+
+    h2 {
+        @include h2-galerias;
+    }
+
+    p {
+        @include p-galerias;
+    }
+}

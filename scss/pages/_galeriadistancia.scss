@@ -1,96 +1,91 @@
-.contenedor-distancia{
-    display: flex;
+.contenedor-distancia {
+    @include flexcenter;
     flex-direction: column;
-    align-content: center;
-    padding:10px;
-    .head-distancia{
-        text-align: center;
-    padding: 5px;
-    background-color: rgba(0, 0, 0, 0.616);
-    width: 90%;
-    margin: auto;
-    h2{
-        padding: 7px;
-    font-size: 1.3rem;
-    font-weight: 500;
-    letter-spacing: 1rem;
-    }
-    p{
-        font-size: 1rem;
-        font-weight: 200;
-    }
-}
-.galeria-distancia{
-    div{
-        width: 90%;
-        padding: 10px;
-        margin: auto;
-    img{
-        width: 100%;
-        border-radius: 7px;
-    }
-    }
-}
-}
+    padding: 10px;
 
-
-@media (min-width:500px){
-    .contenedor-distancia .galeria-distancia{
-        display: grid; 
-        grid-template-columns: repeat(2,1fr); 
-        grid-template-rows: repeat(4,1fr); 
-        gap: 0px 4.5px;
-    }
-    .contenedor-distancia{
+    @include especial500 {
         padding: 15px;
-        .galeria-distancia{
-            display: grid; 
-        grid-template-columns: repeat(2,1fr); 
-        grid-template-rows: repeat(4,1fr); 
-        gap: 7px 7px;
-        margin-top: 20px;
-        div{
-            width: 100%;
-        padding: 1px;
-        margin: 0;
-        }
     }
-    .head-distancia{
-        h2{
-            letter-spacing: 2rem;
-        }
-    }
-    }
-}
 
-@media (min-width:768px){
-    .contenedor-distancia{
+    @include tablet {
         padding: 20px;
-        .galeria-distancia{
-            display: grid; 
-        grid-template-columns: repeat(4,1fr); 
-        grid-template-rows: repeat(2,1fr); 
-        }
-        .head-distancia{
-            padding: 20px;
-            h2{
-                font-size: 2rem;
-            }
-        }
     }
-}
 
-@media (min-width:1200px){
-    .contenedor-distancia .head-distancia h2{
-        .head-distancia{
-            h2{
-                padding-bottom: 20px;
+    .head-distancia {
+        @include headgalerias;
+
+        h2 {
+            @include h2-galerias;
+            letter-spacing: 0.8rem;
+
+            @include especial500 {
+                letter-spacing: 1.5rem;
+            }
+
+            @include desktop {
+                letter-spacing: 2.5rem;
             }
         }
+
+        p {
+            @include p-galerias;
+        }
     }
-    .contenedor-distancia{
-        .galeria-distancia{
-            gap: 12px 12px;
+
+    .galeria-distancia {
+        @include especial500 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            gap: 7px 7px;
+            margin-top: 20px;
+        }
+
+        @include tablet {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+
+        @include desktop {
+            gap: 15px 15px;
+        }
+
+        div {
+            width: 90%;
+            padding: 10px;
+            margin: auto;
+
+            @include especial500 {
+                width: 100%;
+                padding: 1px;
+                margin: 0;
+            }
+
+            @include desktop {
+                &:hover img{
+                    cursor: pointer;
+                    animation: fade 7s forwards;
+                    animation-delay: 0s;
+
+                    @keyframes fade {
+                        0% {
+                            transform: scale(1.0);
+                            opacity: 1.0;
+                        }
+
+                        100% {
+                            transform: scale(0);
+                            opacity: 0.8;
+                        }
+                    }
+                }
+            }
+
+            img {
+                width: 100%;
+                border-radius: 7px;
+            }
         }
     }
 }

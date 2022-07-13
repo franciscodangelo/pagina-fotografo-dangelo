@@ -1,72 +1,50 @@
-.contenedor-thefall{
-    display: flex;
+.contenedor-thefall {
+    @include flexcenter;
     flex-direction: column;
-    align-content: center;
-    padding:10px;
-}
-.contenedor-thefall .head-thefall{
-    text-align: center;
-    padding: 5px;
-    background-color: rgba(0, 0, 0, 0.616);
-    width: 90%;
-    margin: auto;
-}
-
-.contenedor-thefall .head-thefall h2{
-    padding-bottom: 20px;
-    font-size: 1.3rem;
-    font-weight: 500;
-}
-
-.contenedor-thefall .head-thefall p{
-    font-size: 1rem;
-    font-weight: 200;
-}
-
-.contenedor-thefall .galeria-thefall div{
-    width: 90%;
     padding: 10px;
-    margin: auto;
-}
 
-.contenedor-thefall .galeria-thefall div img{
-    width: 100%;
-    border-radius: 10px;
-}
-
-
-@media (min-width:768px){
-    .contenedor-thefall{
-        padding: 15px;
-    }
-    .contenedor-thefall .galeria-thefall{
-        display: flex;
-        align-items: center;
-        margin-top: 20px;
-    }
-    .contenedor-thefall .galeria-thefall div{
-        width: 100%;
-        padding: 1px;
-        margin: 0;
-    }
-    .contenedor-thefall .galeria-thefall div img{
-        padding: 10px;
-    }
-
-    .contenedor-thefall{
+    @include tablet {
         padding: 20px;
     }
-    .contenedor-thefall .head-thefall h2{
-        padding-bottom: 20px;
-        font-size: 2rem;
-    }
-    .contenedor-thefall .head-thefall{
-        padding: 20px;
-    }
-}
 
-@media (min-width:1200px){
-    .contenedor-thefall .head-thefall h2{
-        padding-bottom: 20px;
+    .head-thefall {
+        @include headgalerias;
+
+        h2 {
+            @include h2-galerias;
+        }
+
+        p {
+            @include p-galerias;
+        }
+    }
+
+    .galeria-thefall {
+        @include tablet {
+            @include flexcenter;
+            margin-top: 20px;
+        }
+
+        div {
+            width: 90%;
+            padding: 10px;
+            margin: auto;
+            margin-bottom: 15px;
+
+            @include tablet {
+                width: 100%;
+                padding: 1px;
+                margin: 0;
+            }
+
+            img {
+                width: 100%;
+                border-radius: 10px;
+
+                @include tablet {
+                    padding: 10px;
+                }
+            }
+        }
     }
 }

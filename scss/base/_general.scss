@@ -6,7 +6,6 @@ body{
     background-attachment: fixed;
 }
 
-
 ul, ol{
     list-style: none;
     li{
@@ -20,24 +19,17 @@ a{
     text-decoration: none;
 }
 
+@media (prefers-reduced-motion: reduce) {
 
-
-h2{
-    text-align: center;
-    font-weight: 400;
-    font-size: 1.1rem;
-    padding: 15px;
-}
-
-@media (min-width:768px){
-    h2{
-        font-size: 1.4rem;
-        font-weight: 500;
-    }
-}
-
-@media (min-width:1200px){
-    h2{
-        font-size: 1.8rem; 
+    *,
+    ::before,
+    ::after {
+        animation-delay: -1ms !important;
+        animation-duration: 1ms !important;
+        animation-iteration-count: 1 !important;
+        background-attachment: initial !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0s !important;
+        transition-delay: 0s !important;
     }
 }

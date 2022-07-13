@@ -1,16 +1,17 @@
 .navbar{
     background-color: rgba(0, 0, 0, 0.829);
-}
-.navbar a{
-    color: white;
+    a{
+        color: $color-principal;
+    }
 }
 
+
 .navbar-expand-lg .navbar-nav .nav-link {
-    color: white;
+    color: $color-principal;
 }
 
 .navbar a:hover{
-    color: white;
+    color: $color-principal;
 }
 
 .dropdown-menu{
@@ -27,6 +28,3 @@
     background-color: rgba(128, 128, 128, 0.575);
 }
 }
-
-
-

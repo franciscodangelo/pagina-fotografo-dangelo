@@ -1,127 +1,209 @@
-.contenedor-about{
+.contenedor-about {
     padding: 14px;
-    display: flex;
+    @include flexcenter;
     flex-direction: column;
-    align-items: center;
-}
-.contenedor-about h2{
-    font-size: 1.5rem;
-    text-shadow: 5px 5px 7px black;
-    display: inline-block;
-    background-color: rgba(0, 0, 0, 0.863);
-    border-radius: 30px;
+
+    h2 {
+        @include h2;
+    }
+
+    .tarjeta-about {
+        @include flexcenter;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-around;
+
+        @include especial600 {
+            display: flex;
+            flex-direction: row;
+        }
+
+        video {
+            width: 90%;
+            padding: 15px;
+
+            @include especial600 {
+                width: 50%;
+            }
+
+            @include desktop {
+                width: 30%;
+            }
+        }
+
+        p {
+            background-color: rgba(0, 0, 0, 0.788);
+            border-radius: 10px;
+
+            @include especial600 {
+                height: 70%;
+                padding: 20px;
+            }
+
+            @include desktop {
+                width: 40%;
+            }
+        }
+    }
 }
 
-.contenedor-about .tarjeta-about{
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    text-align: center;
-    justify-content: space-around;
-}
 
-.contenedor-about .tarjeta-about video{
-    width: 90%;
-    padding: 15px;
-}
-
-.contenedor-about .tarjeta-about p{
-    background-color: rgba(0, 0, 0, 0.616);
-}
-
-.contenedor-exhibits{
-    display: flex;
+.contenedor-exhibits {
+    @include flexcenter;
     flex-direction: column;
-    align-items: center;
-}
 
-.contenedor-exhibits h2{
-    font-size: 1.8rem;
-    text-shadow: 5px 5px 7px black;
-    display: inline-block;
-    background-color: rgba(0, 0, 0, 0.863);
-    border-radius: 30px;
-}
-
-.contenedor-exhibist-tarjetas{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    align-items: center;
-}
-
-.contenedor-exhibist-tarjetas .exhibits-item1, .exhibits-item2, .exhibits-item3, .exhibits-item4{
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.616);
-    margin-bottom: 20px;
-    align-items: center;
-    border-radius: 20px;
-}
-
-.contenedor-exhibist-tarjetas .exhibits-item1 img, .exhibits-item2 img, .exhibits-item3 img, .exhibits-item4 img{
-    width: 80%;
-    padding: 10px;
-    padding-top: 20px;
-}
-
-.contenedor-exhibist-tarjetas .exhibits-item1 p, .exhibits-item2 p, .exhibits-item3 p, .exhibits-item4 p{
-    padding: 15px;
-    text-align: justify;
-}
-
-
-@media (min-width:600px){
-    .contenedor-about .tarjeta-about{
-        display: flex;
-        flex-direction: row;
-    }
-    .contenedor-about .tarjeta-about video{
-        width: 50%;
+    h2 {
+        @include h2;
     }
 
-    .contenedor-about .tarjeta-about p{
-        height: 70%;
-        padding: 20px;
-        
-    }
-}
+    .contenedor-exhibist-tarjetas {
+        @include flexcenter;
+        flex-direction: column;
+        padding: 10px;
 
-@media (min-width:768px){
-    .contenedor-exhibist-tarjetas .exhibits-item1, .exhibits-item2, .exhibits-item3, .exhibits-item4{
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 80px;
-        margin: 20px;
-    }
-    .contenedor-exhibist-tarjetas .exhibits-item1 img, .exhibits-item2 img, .exhibits-item3 img, .exhibits-item4 img{
-        width: 55%;
-        padding: 20px;
-    }
-    .contenedor-exhibist-tarjetas .exhibits-item2, .exhibits-item4{
-        flex-direction: row-reverse;
-    }
-}
+        .exhibits-item1 {
+            @include flexcenter;
+            flex-direction: column;
+            background-color: $color-back;
+            margin-bottom: 20px;
+            border-radius: 20px;
 
+            @include tablet {
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 80px;
+                margin: 20px;
+            }
 
-@media (min-width:1000px){
-    .contenedor-about .tarjeta-about video{
-    width: 30%;
-    }
-    .contenedor-about .tarjeta-about p{
-    width: 40%;
-    }
-    .contenedor-about h2{
-        font-size: 2rem;
-    }
-    .contenedor-exhibits h2{
-        font-size: 2rem;
-    }
-}
+            img {
+                width: 80%;
+                padding: 10px;
+                padding-top: 20px;
 
-@media (min-width:1200px){
-    .contenedor-exhibist-tarjetas .exhibits-item1 img, .exhibits-item2 img, .exhibits-item3 img, .exhibits-item4 img{
-        width: 50%;
-        padding: 30px;
+                @include tablet {
+                    width: 55%;
+                    padding: 20px;
+                }
+
+                @include wide {
+                    width: 50%;
+                    padding: 30px;
+                }
+            }
+
+            p {
+                padding: 15px;
+                text-align: justify;
+            }
+        }
+
+        .exhibits-item2 {
+            @include flexcenter;
+            flex-direction: column;
+            background-color: $color-back;
+            margin-bottom: 20px;
+            border-radius: 20px;
+
+            @include tablet {
+                display: flex;
+                flex-direction: row-reverse;
+                margin-bottom: 80px;
+                margin: 20px;
+            }
+
+            img {
+                width: 80%;
+                padding: 10px;
+                padding-top: 20px;
+
+                @include tablet {
+                    width: 55%;
+                    padding: 20px;
+                }
+
+                @include wide {
+                    width: 50%;
+                    padding: 30px;
+                }
+            }
+
+            p {
+                padding: 15px;
+                text-align: justify;
+            }
+        }
+
+        .exhibits-item3 {
+            @include flexcenter;
+            flex-direction: column;
+            background-color: $color-back;
+            margin-bottom: 20px;
+            border-radius: 20px;
+
+            @include tablet {
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 80px;
+                margin: 20px;
+            }
+
+            img {
+                width: 80%;
+                padding: 10px;
+                padding-top: 20px;
+
+                @include tablet {
+                    width: 55%;
+                    padding: 20px;
+                }
+
+                @include wide {
+                    width: 50%;
+                    padding: 30px;
+                }
+            }
+
+            p {
+                padding: 15px;
+                text-align: justify;
+            }
+        }
+
+        .exhibits-item4 {
+            @include flexcenter;
+            flex-direction: column;
+            background-color: $color-back;
+            margin-bottom: 20px;
+            border-radius: 20px;
+
+            @include tablet {
+                display: flex;
+                flex-direction: row-reverse;
+                margin-bottom: 80px;
+                margin: 20px;
+            }
+
+            img {
+                width: 80%;
+                padding: 10px;
+                padding-top: 20px;
+
+                @include tablet {
+                    width: 55%;
+                    padding: 20px;
+                }
+
+                @include wide {
+                    width: 50%;
+                    padding: 30px;
+                }
+            }
+
+            p {
+                padding: 15px;
+                text-align: justify;
+            }
+        }
     }
+
 }

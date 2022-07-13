@@ -1,0 +1,21 @@
+
+.btn {
+    text-align: center;
+    padding: 7px;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    background-color: black;
+    color: $color-principal;
+
+    &:hover {
+        background-color: rgb(128, 128, 128);
+    }
+}
+
+.btnrojo{
+    @extend .btn;
+        &:hover {
+            background-color: rgba(165, 0, 0, 0.788);
+        }
+}

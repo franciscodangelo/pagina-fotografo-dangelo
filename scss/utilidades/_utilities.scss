@@ -1,0 +1,61 @@
+@mixin flexcenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin headgalerias {
+    text-align: center;
+    padding: 5px;
+    background-color: $color-back;
+    width: 90%;
+    margin: auto;
+    border-radius: 20px;
+    margin: 15px;
+}
+
+@mixin h2 {
+    font-size: 1.1rem;
+    text-shadow: 5px 5px 7px black;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.863);
+    border-radius: 30px;
+    margin: 30px;
+    padding: 15px;
+    font-weight: map-get($font-weights, pequeño);
+
+    @include tablet {
+        font-size: 1.5rem;
+        font-weight: map-get($font-weights, mediano);
+    }
+
+    @include desktop {
+        font-size: 1.7rem;
+    }
+}
+
+@mixin h2-galerias {
+    text-align: center;
+    padding: 20px 7px 10px 7px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 0.5rem;
+
+    @include tablet {
+        font-size: 2rem;
+        padding: 20px;
+    }
+
+    @include desktop{
+        font-weight: map-get($font-weights, grande);
+    }
+}
+
+@mixin p-galerias {
+    font-size: 1rem;
+    padding: 0px 15px 0px 15px;
+    font-weight: 200;
+    @include desktop{
+        font-weight: map-get($font-weights, pequeño);
+    }
+}
