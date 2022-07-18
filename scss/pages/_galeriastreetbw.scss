@@ -1,0 +1,67 @@
+.contenedor-bw {
+    @include flexcenter;
+    flex-direction: column;
+    padding: 10px;
+
+    @include especial500 {
+        padding: 15px;
+    }
+
+    @include tablet {
+        padding: 20px;
+    }
+
+    .head-bw {
+        @include headgalerias;
+
+        h2 {
+            @include h2-galerias;
+        }
+
+        p {
+            @include p-galerias;
+        }
+    }
+
+    .galeria-bw {
+        @include especial500 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            gap: 7px 7px;
+            margin-top: 20px;
+        }
+
+        @include tablet {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 12px 12px;
+        }
+
+        @include desktop {
+            gap: 15px 15px;
+        }
+
+        div {
+            width: 90%;
+            padding: 10px;
+            margin: auto;
+            @include flexcenter;
+
+            @include especial500 {
+                width: 100%;
+                padding: 1px;
+                margin: 0;
+            }
+
+            img {
+                width: 100%;
+                border-radius: 7px;
+            }
+        }
+    }
+}
+.backgaleriebw{
+    background-color: rgba(0, 0, 0, 0.637);
+}
