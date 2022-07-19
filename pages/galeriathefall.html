@@ -95,10 +95,10 @@
                 <img src="../img/thefall1.jpg" alt="photo of the floor with overexposed grass">
             </div>
             <script>
-                document.querySelectorAll('.galeria-thefall img').forEach(img =>{
-                    img.onclick = () =>{
+                document.querySelectorAll('.galeria-thefall img').forEach(images =>{
+                    images.onclick = () =>{
                         document.querySelector('.popup-img').style.desplay = 'block';
-                        document.querySelector('.popup-img img').src = img.getAttribute('src');
+                        document.querySelector('.popup-img img').src = images.getAttribute('src');
                     }
                 });
             </script>
