@@ -21,6 +21,7 @@
         video {
             width: 90%;
             padding: 15px;
+            
 
             @include especial600 {
                 width: 50%;
@@ -64,7 +65,7 @@
         .exhibits-item1 {
             @include flexcenter;
             flex-direction: column;
-            background-color: $color-back;
+            background-color: rgba(0, 0, 0, 0.918);
             margin-bottom: 20px;
             border-radius: 20px;
 
@@ -100,7 +101,7 @@
         .exhibits-item2 {
             @include flexcenter;
             flex-direction: column;
-            background-color: $color-back;
+            background-color: rgba(0, 0, 0, 0.918);
             margin-bottom: 20px;
             border-radius: 20px;
 
@@ -136,7 +137,7 @@
         .exhibits-item3 {
             @include flexcenter;
             flex-direction: column;
-            background-color: $color-back;
+            background-color: rgba(0, 0, 0, 0.918);
             margin-bottom: 20px;
             border-radius: 20px;
 
@@ -172,7 +173,7 @@
         .exhibits-item4 {
             @include flexcenter;
             flex-direction: column;
-            background-color: $color-back;
+            background-color: rgba(0, 0, 0, 0.918);
             margin-bottom: 20px;
             border-radius: 20px;
 

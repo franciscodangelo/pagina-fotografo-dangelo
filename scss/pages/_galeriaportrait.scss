@@ -33,21 +33,18 @@
         @include especial500 {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(10, 1fr);
+            grid-template-rows: repeat(9, 1fr);
             gap: 10px 10px;
             margin-top: 20px;
         }
 
         @include tablet {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(5, 1fr);
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(6, 1fr);
         }
-
-        @include wide {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            grid-template-rows: repeat(4, 1fr);
+        @include desktop{
+            gap: 20px 20px;
         }
     }
 

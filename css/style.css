@@ -55,7 +55,7 @@ a {
   }
 }
 .backgalerie {
-  background-color: rgba(151, 151, 151, 0.582);
+  background-color: rgba(185, 185, 185, 0.247);
 }
 
 .navbar {
@@ -99,7 +99,7 @@ a {
 .contenedor-people .galeria-people {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
   gap: 5px 0px;
   justify-items: center;
   align-items: center;
@@ -124,15 +124,22 @@ a {
   align-items: center;
   justify-content: center;
 }
-.contenedor-people .galeria-people div img {
-  width: 50%;
+.contenedor-people .galeria-people div a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contenedor-people .galeria-people div a img {
+  width: 85%;
 }
 @media screen and (min-width: 1080px) {
-  .contenedor-people .galeria-people div img {
+  .contenedor-people .galeria-people div a img {
+    width: 55%;
     transition-duration: 200ms;
   }
-  .contenedor-people .galeria-people div img:hover {
+  .contenedor-people .galeria-people div a img:hover {
     transform: scale(2.2);
+    cursor: pointer;
   }
 }
 .contenedor-people h2 {
@@ -193,6 +200,10 @@ a {
     font-size: 13rem;
   }
 }
+span .carousel-control-next-icon {
+  color: black;
+}
+
 .contenedor-about {
   padding: 14px;
   display: flex;
@@ -304,7 +315,7 @@ a {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.918);
   margin-bottom: 20px;
   border-radius: 20px;
 }
@@ -342,7 +353,7 @@ a {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.918);
   margin-bottom: 20px;
   border-radius: 20px;
 }
@@ -380,7 +391,7 @@ a {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.918);
   margin-bottom: 20px;
   border-radius: 20px;
 }
@@ -418,7 +429,7 @@ a {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.918);
   margin-bottom: 20px;
   border-radius: 20px;
 }
@@ -512,6 +523,7 @@ a {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
     gap: 30px 30px;
+    overflow-x: none;
   }
 }
 @media screen and (min-width: 1080px) {
@@ -601,6 +613,7 @@ a {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(0, 1fr);
     gap: 30px 30px;
+    overflow-x: none;
   }
 }
 .contenedor-print-sale .contenedor-item .item {
@@ -818,6 +831,11 @@ a {
   }
 }
 
+.lumbreimg {
+  width: 100%;
+  border: 5px solid black;
+}
+
 .contenedor-portrait {
   display: flex;
   align-items: center;
@@ -856,7 +874,7 @@ a {
   .contenedor-portrait .galeria-portrait {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(10, 1fr);
+    grid-template-rows: repeat(9, 1fr);
     gap: 10px 10px;
     margin-top: 20px;
   }
@@ -864,15 +882,13 @@ a {
 @media screen and (min-width: 768px) {
   .contenedor-portrait .galeria-portrait {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
   }
 }
-@media screen and (min-width: 1260px) {
+@media screen and (min-width: 1080px) {
   .contenedor-portrait .galeria-portrait {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    gap: 20px 20px;
   }
 }
 .contenedor-portrait .head-portrait {
@@ -962,34 +978,6 @@ a {
     font-weight: 400;
   }
 }
-.contenedor-thefall .popup-img {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.9);
-  width: 100%;
-  height: 100%;
-  z-index: 100;
-  display: none;
-}
-.contenedor-thefall .popup-img span {
-  position: absolute;
-  top: 0;
-  right: 10px;
-  font-size: 60px;
-  font-weight: bolder;
-  color: #fff;
-  cursor: pointer;
-  z-index: 100;
-}
-.contenedor-thefall .popup-img img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 400px;
-  object-fit: cover;
-}
 @media screen and (min-width: 768px) {
   .contenedor-thefall .galeria-thefall {
     display: flex;
@@ -998,29 +986,34 @@ a {
     margin-top: 20px;
   }
 }
-.contenedor-thefall .galeria-thefall div {
+.contenedor-thefall .galeria-thefall .fall {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 90%;
   padding: 10px;
   margin: auto;
   margin-bottom: 15px;
 }
 @media screen and (min-width: 768px) {
-  .contenedor-thefall .galeria-thefall div {
+  .contenedor-thefall .galeria-thefall .fall {
     width: 100%;
     padding: 1px;
     margin: 0;
   }
 }
-.contenedor-thefall .galeria-thefall div img {
+.contenedor-thefall .galeria-thefall .fall img {
   width: 100%;
   border-radius: 10px;
+  border: 3px solid black;
 }
-.contenedor-thefall .galeria-thefall div img:hover {
+.contenedor-thefall .galeria-thefall .fall img:hover {
   cursor: pointer;
 }
 @media screen and (min-width: 768px) {
-  .contenedor-thefall .galeria-thefall div img {
-    padding: 10px;
+  .contenedor-thefall .galeria-thefall .fall img {
+    margin: 30px;
+    width: 95%;
   }
 }
 
@@ -1118,10 +1111,7 @@ a {
 .contenedor-bw .galeria-bw div img {
   width: 100%;
   border-radius: 7px;
-}
-
-.backgaleriebw {
-  background-color: rgba(0, 0, 0, 0.637);
+  border: 5px solid rgb(0, 0, 0);
 }
 
 .contenedor-color {
@@ -1193,12 +1183,12 @@ a {
 @media screen and (min-width: 768px) {
   .contenedor-color .galeria-color {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(10, 1fr);
   }
 }
 .contenedor-color .galeria-color div {
-  width: 90%;
+  width: 100%;
   padding: 10px;
   margin: auto;
 }
@@ -1212,13 +1202,14 @@ a {
 .contenedor-color .galeria-color div img {
   width: 100%;
   border-radius: 7px;
+  border: 3px solid rgb(0, 0, 0);
 }
 
 .contenedor-glitch {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 100px 30px 100px 30px;
+  margin: 200px 30px 200px 30px;
 }
 @media screen and (min-width: 1080px) {
   .contenedor-glitch .boton-glitch {
