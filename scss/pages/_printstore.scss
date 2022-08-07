@@ -11,17 +11,15 @@
     .contenedor-item {
         width: 100%;
         @include flexcenter;
-        justify-content: space-between;
-        overflow-x: scroll;
+        flex-direction: column;
         margin-bottom: 20px;
-
 
         @include tablet {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(4, 1fr);
             gap: 30px 30px;
-            overflow-x: none;
+            justify-items: center;
         }
 
         @include desktop {
@@ -38,8 +36,8 @@
             text-align: center;
             padding: 10px;
             min-width: 250px;
-            margin-right: 15px;
-
+            margin: 20px;
+            
 
             &:hover {
                 div img {
@@ -92,11 +90,8 @@
 
     .contenedor-item {
         width: 100%;
-        display: flex;
-        flex-direction: row;
-        overflow-x: scroll;
-        justify-content: space-between;
-        align-items: center;
+        @include flexcenter;
+        flex-direction: column;
         margin-bottom: 20px;
 
         @include tablet {
@@ -104,7 +99,7 @@
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(0, 1fr);
             gap: 30px 30px;
-            overflow-x: none;
+            justify-items: center;
         }
 
         .item {
@@ -115,7 +110,7 @@
             text-align: center;
             padding: 10px;
             min-width: 250px;
-            margin-right: 15px;
+            margin: 20px;
 
             &:hover {
                 div img {
