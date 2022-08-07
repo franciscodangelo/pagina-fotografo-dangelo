@@ -5,6 +5,11 @@
 
     @include tablet {
         padding: 20px;
+        margin: 140px 0px 140px 0px;
+    }
+
+    @include wide {
+        margin: 10px 0px 20px 0px;
     }
 
     .head-thefall {
@@ -30,7 +35,6 @@
             width: 90%;
             padding: 10px;
             margin: auto;
-            margin-bottom: 15px;
 
             @include tablet {
                 width: 100%;
@@ -39,16 +43,21 @@
             }
 
             img {
-                width: 100%;
+                width: 90%;
                 border-radius: 10px;
                 border: 3px solid black;
-                &:hover{
-                    cursor: pointer;
-                }
+                margin: 15px;
+                transition: 0.3s;
 
                 @include tablet {
                     margin: 30px;
-                    width: 95%;
+                    width: 85%;
+                }
+
+                @include wide {
+                    &:hover {
+                        transform: scale(1.02);
+                    }
                 }
             }
         }

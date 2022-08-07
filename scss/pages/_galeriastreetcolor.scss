@@ -54,6 +54,13 @@
                 width: 100%;
                 border-radius: 7px;
                 border: 3px solid rgb(0, 0, 0);
+                transition: 0.3s;
+
+                @include wide {
+                    &:hover {
+                        transform: scale(1.01);
+                    }
+                }
             }
         }
     }

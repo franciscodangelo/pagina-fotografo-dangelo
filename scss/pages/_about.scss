@@ -2,6 +2,7 @@
     padding: 14px;
     @include flexcenter;
     flex-direction: column;
+    margin-bottom: 70px;
 
     h2 {
         @include h2;
@@ -16,6 +17,9 @@
         @include especial600 {
             display: flex;
             flex-direction: row;
+        }
+        @include desktop{
+            margin: 30px;
         }
 
         video {
@@ -35,6 +39,8 @@
         p {
             background-color: rgba(0, 0, 0, 0.788);
             border-radius: 10px;
+            padding: 12px;
+            margin: 0;
 
             @include especial600 {
                 height: 70%;
@@ -42,7 +48,7 @@
             }
 
             @include desktop {
-                width: 40%;
+                width: 30%;
             }
         }
     }
@@ -52,9 +58,12 @@
 .contenedor-exhibits {
     @include flexcenter;
     flex-direction: column;
-
+    margin-top: 60px;
     h2 {
         @include h2;
+    }
+    @include desktop{
+        margin: 60px 20px 20px 20px;
     }
 
     .contenedor-exhibist-tarjetas {
@@ -206,5 +215,22 @@
             }
         }
     }
+}
+.work-collab{
+    h2{
+    @include h2;
+    margin-bottom: 10px;
+    @include wide{
+        margin-bottom: 0px;
+    }
+}
+}
 
+.carousel-control-next-icon{
+    background-color: rgba(0, 0, 0, 0.473);
+    border-radius: 50%;
+}
+.carousel-control-prev-icon{
+    background-color: rgba(0, 0, 0, 0.473);
+    border-radius: 50%;
 }

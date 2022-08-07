@@ -10,7 +10,14 @@
     }
 }
 
-.lumbreimg{
+.lumbreimg {
     width: 100%;
     border: 5px solid black;
+    transition: 0.3s;
+
+    @include wide {
+        &:hover {
+            transform: scale(1.01);
+        }
+    }
 }
